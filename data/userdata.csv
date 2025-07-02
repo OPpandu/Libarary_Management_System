@@ -1,7 +1,6 @@
 aragorn_elessar,student,ranger,0,0
 boromir_gondor,student,honor,0,0
-don_vito_corleone,student,italia,1,1
-,1754078253
+don_vito_corleone,student,italia,0,1
 borrow,don_vito_corleone,ISBN001,2025-07-03 01:27:33
 fredo_corleone,student,weak,0,0
 frodo_baggins,student,ring,0,0
@@ -20,8 +19,10 @@ saul_goodman,student,lawyer,0,0
 skyler_white,student,accountant,0,0
 sonny_corleone,student,temper,0,0
 tom_hagen,faculty,advisor,0,0
-walter_white,faculty,heisenberg,0,4
-borrow,walter_white,ISBN012,2025-07-03 01:25:59
-borrow,walter_white,ISBN013,2025-07-03 01:26:25
-return,walter_white,ISBN012,2025-07-03 01:26:41
-return,walter_white,ISBN013,2025-07-03 01:26:49
+walter_white,faculty,heisenberg,1,5
+ISBN012,1756671113
+borrow,walter_white,ISBN012,2025-07-03 01:36:56
+borrow,walter_white,ISBN013,2025-07-03 01:37:01
+return,walter_white,ISBN012,2025-07-03 01:37:53
+return,walter_white,ISBN013,2025-07-03 01:37:59
+borrow,walter_white,ISBN012,2025-07-03 01:41:53

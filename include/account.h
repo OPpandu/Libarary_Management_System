@@ -5,13 +5,13 @@
 #include "transaction.h"
 using namespace std;
 class account {
-public:
+protected:
     string password;
-    int history_size;
-    queue<transaction> history;
-    vector<pair<book*, time_t>> curr_borrowed;
-public:
     string type;
+public:
+    queue<transaction> history;
+    int history_size;
+    vector<pair<book*, time_t>> curr_borrowed;
     int total_fine;
     string username;
     int max_book, duedays, finerate;

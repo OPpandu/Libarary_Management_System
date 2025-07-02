@@ -320,42 +320,37 @@ void lib::store_all_data(){
         return;
     }
     fout0 << "Genre,Title,Author,Publisher,Year,ISBN,status\n";
-    while(!allbooks.empty()){
-        auto it = *allbooks.begin();
-        allbooks.erase(it);
-        string s = it.booktocsv();
-        fout0 << s;
+    for (const auto& b : allbooks) {
+        fout0 << b.booktocsv();
     }
     fout0.close();
 
     ofstream fout1("data/userdata.csv");
     if(!fout1.is_open()){
-        cerr<< "Failed to open userdata.csv for writing.\n";
+        cerr << "Failed to open userdata.csv for writing.\n";
         return;
     }
-    for(auto it : all_accounts){
+    for(auto& it : all_accounts){
         vector<string> data = it.second->account_to_csv();
-        for(auto it : data){
-            fout1<<it;
+        for(auto& line : data){
+            fout1 << line;
         }
-        delete it.second;
     }
     fout1.close();
 
-    ofstream fout("data/history.csv",ios::app);
-    if (!fout1.is_open()) {
-        cerr << "Failed to open books.csv for writing.\n";
+    ofstream fout("data/history.csv", ios::app);
+    if (!fout.is_open()) {
+        cerr << "Failed to open history.csv for writing.\n";
         return;
     }
-
-    for(auto it: history){
-        string s = it.transaction_to_csv();
-        fout1 << s;
+    for(auto& it: history){
+        fout << it.transaction_to_csv();
     } 
-    return;
+    fout.close();
 }
 
-void lib::load_all_data(){
+void lib::load_all_data() {
+    // ---------------- Books ----------------
     ifstream fin("data/books.csv");
     if (!fin.is_open()) {
         cerr << "Failed to open books.csv for reading.\n";
@@ -378,13 +373,13 @@ void lib::load_all_data(){
         getline(ss, status, '\n');
 
         int year = stoi(yearStr);
-        book b(genre, title, author, publisher, year, isbn);
+        book b(genre, title, author, publisher, year, isbn);  // ✅ Corrected order
         b.status = status;
-
         allbooks.insert(b);
     }
     fin.close();
 
+    // ---------------- Accounts ----------------
     ifstream fac("data/userdata.csv");
     if (!fac.is_open()) {
         cerr << "Failed to open userdata.csv for reading.\n";
@@ -403,18 +398,26 @@ void lib::load_all_data(){
         int borrowCount = stoi(borrowCountStr);
         int histCount = stoi(historyCountStr);
 
-        account* acc;
+        account* acc = nullptr;
         if(type == "student") acc = new student(username, password);
         else if(type == "faculty") acc = new faculty(username, password);
-        else acc = new student(username, password);
+        else if(type == "librarian") acc = new librarian(username, password);
+        else {
+            cerr << "Unknown account type: " << type << " for user " << username << endl;
+            continue;
+        }
 
+        // Read current borrowed books
         for (int i = 0; i < borrowCount; ++i) {
             getline(fac, line);
             stringstream bs(line);
             string isbn, timestr;
             getline(bs, isbn, ',');
             getline(bs, timestr, '\n');
+
             book* b = find_book(isbn);
+            if (!b) continue;
+
             time_t t = stoll(timestr);
             acc->curr_borrowed.push_back({b, t});
         }
@@ -422,15 +425,17 @@ void lib::load_all_data(){
         for (int i = 0; i < histCount; ++i) {
             getline(fac, line);
             stringstream ts(line);
-            string type, usrname, isbn, timestr;
-            getline(ts, type, ',');
+            string ttype, usrname, isbn, timestr;
+            getline(ts, ttype, ',');
             getline(ts, usrname, ',');
             getline(ts, isbn, ',');
             getline(ts, timestr, '\n');
+
             struct tm tm{};
             strptime(timestr.c_str(), "%Y-%m-%d %H:%M:%S", &tm);
             time_t time = mktime(&tm);
-            transaction t(type, usrname, isbn, time);
+
+            transaction t(ttype, usrname, isbn, time);
             acc->history.push(t);
         }
 
