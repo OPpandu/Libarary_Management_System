@@ -1,5 +1,5 @@
 #include<iostream>
-#include "lib.h"
+#include "librarian.h"
 #include "utils.h"
 using namespace std;
 
@@ -12,4 +12,5 @@ librarian::librarian(string usrname,string password){
     this->duedays = 60;
     this->finerate = 5;
     this->history_size = 5;
+    
 }

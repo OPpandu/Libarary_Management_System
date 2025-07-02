@@ -1,21 +1,18 @@
 Genre,Title,Author,Publisher,Year,ISBN,status
-Crime,The Godfather,Mario Puzo,G. P. Putnam's Sons,1969,ISBN001,Available
-Fantasy,The Fellowship of the Ring,J.R.R. Tolkien,Allen & Unwin,1954,ISBN002,Available
-Fantasy,The Two Towers,J.R.R. Tolkien,Allen & Unwin,1954,ISBN003,Available
-Fantasy,The Return of the King,J.R.R. Tolkien,Allen & Unwin,1955,ISBN004,Available
-Self-Help,Ikigai,Héctor García,Francesc Miralles,2016,ISBN005,Available
-Fiction,The Great Gatsby,F. Scott Fitzgerald,Scribner,1925,ISBN006,Available
-Fiction,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1960,ISBN007,Available
-Fiction,1984,George Orwell,Secker & Warburg,1949,ISBN008,Available
-Non-Fiction,Sapiens,Yuval Noah Harari,Harper,2011,ISBN009,Available
-Self-Help,The Power of Now,Eckhart Tolle,New World Library,1997,ISBN010,Available
-Science,A Brief History of Time,Stephen Hawking,Bantam Books,1988,ISBN011,Available
-Science,Cosmos,Carl Sagan,Random House,1980,ISBN012,Available
-Fantasy,The Hobbit,J.R.R. Tolkien,Allen & Unwin,1937,ISBN013,Available
-Fantasy,Harry Potter and the Philosopher's Stone,J.K. Rowling,Bloomsbury,1997,ISBN014,Available
-Mystery,The Da Vinci Code,Dan Brown,Doubleday,2003,ISBN015,Available
-Biography,Steve Jobs,Walter Isaacson,Simon & Schuster,2011,ISBN016,Available
-Fiction,The Catcher in the Rye,J.D. Salinger,Little Brown,1951,ISBN017,Available
-Philosophy,The Republic,Plato,Penguin Classics,-380,ISBN018,Available
-Biography,Long Walk to Freedom,Nelson Mandela,Little Brown,1994,ISBN019,Available
-Romance,Pride and Prejudice,Jane Austen,T. Egerton,1813,ISBN020,Available
+Self-Help,The Power of Now,Eckhart Tolle,New World Library,1997,ISBN020,Available
+Mathematics,Introduction to Algorithms,Thomas Cormen,MIT Press,2009,ISBN016,Available
+Mathematics,Principles of Mathematical Analysis,Walter Rudin,McGraw Hill,1976,ISBN015,Available
+Mathematics,Calculus,James Stewart,Cengage Learning,2015,ISBN014,Available
+Mathematics,Linear Algebra,Gilbert Strang,Cambridge Press,2009,ISBN013,Available
+Chemistry,Organic Chemistry,L G Wade,Pearson,2016,ISBN012,Available
+Chemistry,Physical Chemistry,Peter Atkins,Oxford University Press,2018,ISBN011,Available
+Physics,Quantum Physics of Atoms Molecules Solids Nuclei and Particles,Robert Eisberg,John Wiley and Sons,2010,ISBN010,Available
+Physics,Quantum Mechanics,David Griffiths,Cambridge University Press,2017,ISBN009,Available
+Physics,Modern Physics,Raymond Serway,Cengage Learning,2014,ISBN008,Available
+Physics,Quantum Physics,Robert Eisberg,John Wiley and Sons,2009,ISBN007,Available
+Physics,Concepts of Physics,HC Verma,Bharati Bhavan,2004,ISBN006,Available
+Physics,University Physics,Hugh Young,Pearson,2019,ISBN005,Available
+Fantasy,The Return of the King,J R R Tolkien,Allen and Unwin,1955,ISBN004,Available
+Fantasy,The Two Towers,J R R Tolkien,Allen and Unwin,1954,ISBN003,Available
+Fantasy,The Fellowship of the Ring,J R R Tolkien,Allen and Unwin,1954,ISBN002,Available
+Crime,The Godfather,Mario Puzo,G P Putnams Sons,1969,ISBN001,Not Available

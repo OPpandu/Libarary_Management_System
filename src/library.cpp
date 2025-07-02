@@ -378,7 +378,7 @@ void lib::load_all_data(){
         getline(ss, status, '\n');
 
         int year = stoi(yearStr);
-        book b(title, author, publisher, genre, year, isbn);
+        book b(genre, title, author, publisher, year, isbn);
         b.status = status;
 
         allbooks.insert(b);

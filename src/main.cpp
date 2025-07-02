@@ -20,5 +20,5 @@ int main(){
 ===========================================
 )" << endl;
     lib ml("PK kelkar");
-    ml.mainpage();
+  ml.mainpage();
 }
