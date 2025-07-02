@@ -1,0 +1,101 @@
+Genre,Title,Author,Publisher,Year,ISBN,status
+Fiction,The Silent Watcher,Emily Stone,Bloomsbury,1932,ISBN1000,Available
+Tech,Echoes of Eternity,Liam Blue,Random House,1833,ISBN1001,Available
+Philosophy,The Quantum Path,Mark Black,Viking Press,1870,ISBN1002,Available
+Biography,Dreams of Iron,Jane Doe,Vintage,1857,ISBN1003,Available
+Fantasy,City of Shadows,Alan Walker,Orbit Books,1941,ISBN1004,Available
+Horror,The Last Prophet,Ava Red,Penguin,1963,ISBN1005,Available
+Tech,Winds of Tomorrow,Alan Walker,Penguin,1973,ISBN1006,Available
+Horror,Voices in the Fog,Ava Red,Penguin,1968,ISBN1007,Available
+Romance,Stone and Flame,Emily Stone,Hachette,1881,ISBN1008,Available
+Biography,The Forgotten Spell,John Smith,Penguin,1824,ISBN1009,Available
+Biography,Beneath the Stars,Sophia Green,HarperOne,2003,ISBN1010,Available
+Horror,Dark Code,Mark Black,Scholastic,1917,ISBN1011,Available
+Non-Fiction,Rise of Legends,Jane Doe,Random House,1818,ISBN1012,Available
+Philosophy,Truthbound,Sophia Green,Vintage,1839,ISBN1013,Available
+Fiction,Ashes of the Past,Ava Red,Hachette,1867,ISBN1014,Available
+Philosophy,Hearts Entwined,Robert Gray,Scholastic,1874,ISBN1015,Available
+Fiction,The Snowfall Pact,Mark Black,Viking Press,1840,ISBN1016,Available
+Mystery,Blueprints of Deception,Nora White,Bloomsbury,1922,ISBN1017,Available
+Mystery,Garden of Lies,Sophia Green,HarperOne,1953,ISBN1018,Available
+Biography,Trail of Ember,Emily Stone,Orbit Books,1893,ISBN1019,Available
+Fiction,Mindfield,John Smith,HarperOne,1869,ISBN1020,Available
+Biography,A Stitch in Time,Nora White,Bloomsbury,1864,ISBN1021,Available
+Romance,Rising Depths,Jane Doe,Simon & Schuster,1883,ISBN1022,Available
+Romance,Legacy of Silence,Ava Red,Viking Press,1876,ISBN1023,Available
+Mystery,Crimson Tides,John Smith,Scholastic,1925,ISBN1024,Available
+Tech,Hall of Whispers,Emily Stone,Simon & Schuster,1880,ISBN1025,Available
+Tech,Pages of Regret,Alan Walker,Bloomsbury,1900,ISBN1026,Available
+Romance,Clockwork Pulse,Robert Gray,HarperOne,1828,ISBN1027,Available
+Philosophy,Whispered Names,Liam Blue,Scholastic,2010,ISBN1028,Available
+Fiction,Veil of Secrets,Alan Walker,Simon & Schuster,1810,ISBN1029,Available
+Philosophy,Harmony Lost,Jane Doe,Random House,1957,ISBN1030,Available
+Biography,The Gilded Cage,Jane Doe,Vintage,2001,ISBN1031,Available
+Mystery,Tides of Fate,Liam Blue,Random House,1929,ISBN1032,Available
+Sci-Fi,Nocturnal Pathways,John Smith,Vintage,1876,ISBN1033,Available
+Fiction,Parallel Sins,Mark Black,Penguin,1851,ISBN1034,Available
+Fantasy,Reign of Frost,Robert Gray,Penguin,1992,ISBN1035,Available
+Philosophy,Labyrinth of Hope,Mark Black,Random House,1918,ISBN1036,Available
+Philosophy,Tears of the Phoenix,Nora White,HarperOne,1824,ISBN1037,Available
+Mystery,Dagger and Scroll,Liam Blue,Vintage,2011,ISBN1038,Available
+Mystery,Memoirs of Ash,Jane Doe,Orbit Books,2024,ISBN1039,Available
+Horror,Resonance,Mark Black,Penguin,1817,ISBN1040,Available
+Romance,Fragments of Dawn,Ava Red,Viking Press,1916,ISBN1041,Available
+Fantasy,Cipher of Ages,John Smith,Vintage,1936,ISBN1042,Available
+Romance,The Gravity Effect,Robert Gray,Orbit Books,1924,ISBN1043,Available
+Romance,Tenfold Echo,Robert Gray,HarperOne,1925,ISBN1044,Available
+Horror,Curse of Silence,John Smith,Bloomsbury,1891,ISBN1045,Available
+Mystery,Dust and Embers,Nora White,Random House,1895,ISBN1046,Available
+Fantasy,Strings of Time,Mark Black,Penguin,1924,ISBN1047,Available
+Horror,Lorekeeper’s Vow,Liam Blue,HarperOne,1900,ISBN1048,Available
+Horror,Blinding Truths,Jane Doe,Scholastic,1906,ISBN1049,Available
+Tech,Broken Crown,Emily Stone,Hachette,1813,ISBN1050,Available
+Philosophy,Chronicles Unseen,Nora White,Hachette,1859,ISBN1051,Available
+Horror,Painted Soul,Emily Stone,Viking Press,1959,ISBN1052,Available
+Biography,The Final Bloom,Emily Stone,Scholastic,1959,ISBN1053,Available
+Tech,Watchtower End,Jane Doe,Scholastic,1888,ISBN1054,Available
+Non-Fiction,Outpost Zero,Alan Walker,Viking Press,2023,ISBN1055,Available
+Fiction,Battleborn Oath,Emily Stone,Viking Press,1960,ISBN1056,Available
+Horror,Moonlight Verse,John Smith,Simon & Schuster,1961,ISBN1057,Available
+Fiction,Reverie in Blue,Alan Walker,Scholastic,2007,ISBN1058,Available
+Tech,The Archivist’s Trial,John Smith,Orbit Books,1893,ISBN1059,Available
+Non-Fiction,Nest of Eyes,Emily Stone,Penguin,1956,ISBN1060,Available
+Mystery,Ironhearts,Liam Blue,Scholastic,1880,ISBN1061,Available
+Fiction,The Ivory War,Jane Doe,Orbit Books,2024,ISBN1062,Available
+Mystery,Second Genesis,Liam Blue,Vintage,1826,ISBN1063,Available
+Biography,The Frostborne Pact,John Smith,Scholastic,2012,ISBN1064,Available
+Tech,Thornlight,Ava Red,Random House,1917,ISBN1065,Available
+Horror,Unseen Horizon,John Smith,Vintage,1891,ISBN1066,Available
+Non-Fiction,Netherborne,John Smith,Scholastic,1814,ISBN1067,Available
+Fantasy,Eyes of Glass,John Smith,Simon & Schuster,1993,ISBN1068,Available
+Non-Fiction,Warden’s Gift,Mark Black,Hachette,1966,ISBN1069,Available
+Biography,Pillars of Smoke,Nora White,Penguin,1932,ISBN1070,Available
+Sci-Fi,The Nameless Guard,Robert Gray,Bloomsbury,1856,ISBN1071,Available
+Sci-Fi,Vaults of Madness,Emily Stone,Bloomsbury,1804,ISBN1072,Available
+Biography,Shadows of Winter,Ava Red,Vintage,1929,ISBN1073,Available
+Romance,Gilded Valor,Robert Gray,Scholastic,1814,ISBN1074,Available
+Tech,Lighthouse Code,Emily Stone,Bloomsbury,1961,ISBN1075,Available
+Philosophy,Whispers of Red,Liam Blue,Random House,1843,ISBN1076,Available
+Sci-Fi,Harvest of Time,Sophia Green,Penguin,1968,ISBN1077,Available
+Mystery,The Hollow Mark,Ava Red,Bloomsbury,1880,ISBN1078,Available
+Biography,Fire in the Mist,Alan Walker,Orbit Books,1803,ISBN1079,Available
+Tech,Covenant Dust,Nora White,HarperOne,1965,ISBN1080,Available
+Fiction,Rift Echo,John Smith,Penguin,1991,ISBN1081,Available
+Mystery,Scars of Silver,Emily Stone,Simon & Schuster,1866,ISBN1082,Available
+Horror,Legacy Storm,John Smith,Random House,1866,ISBN1083,Available
+Philosophy,Breath of Sand,Nora White,Random House,1843,ISBN1084,Available
+Sci-Fi,Signal of Mercy,Mark Black,HarperOne,1883,ISBN1085,Available
+Tech,Cobalt Wrath,Robert Gray,Bloomsbury,1819,ISBN1086,Available
+Mystery,Feathers in the Rain,Mark Black,HarperOne,1844,ISBN1087,Available
+Fantasy,Exile Bond,Sophia Green,Penguin,1897,ISBN1088,Available
+Horror,The Sapphire Flame,Liam Blue,HarperOne,1888,ISBN1089,Available
+Biography,Dawnless,John Smith,HarperOne,1844,ISBN1090,Available
+Fiction,Lords of Dust,Robert Gray,Simon & Schuster,1853,ISBN1091,Available
+Romance,Bleeding Edge,Robert Gray,Vintage,2002,ISBN1092,Available
+Romance,Bastion of Dread,Jane Doe,Viking Press,1932,ISBN1093,Available
+Horror,Mercyfall,John Smith,HarperOne,1931,ISBN1094,Available
+Fantasy,Phantom Truth,John Smith,Hachette,1919,ISBN1095,Available
+Fantasy,Eyes of Mercy,Ava Red,Penguin,1920,ISBN1096,Available
+Fantasy,Endless Edge,Mark Black,Orbit Books,1889,ISBN1097,Available
+Fantasy,Ruin’s Promise,Nora White,Vintage,2023,ISBN1098,Available
+Philosophy,The Waking Scroll,Mark Black,Viking Press,1921,ISBN1099,Available

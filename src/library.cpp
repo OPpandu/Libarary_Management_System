@@ -327,9 +327,8 @@ void lib::store_all_data(){
         fout0 << s;
     }
     fout0.close();
-    return;
 
-    ofstream fout1("data/userdata");
+    ofstream fout1("data/userdata.csv");
     if(!fout1.is_open()){
         cerr<< "Failed to open userdata.csv for writing.\n";
         return;

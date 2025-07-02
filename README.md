@@ -1,74 +1,121 @@
-# Library Management System
+Library Management System (C++)
 
-This respository contains my official submission for the C++ Project of the course [CS253](https://www.cse.iitk.ac.in/users/isaha/Courses/sdo25.shtml/): Software Development and Operations in Spring 2024 under the guidance of [Prof. Indranil Saha](https://www.cse.iitk.ac.in/users/isaha/). 
+A command-line based Library Management System implemented in C++ using Object-Oriented Programming. This project supports login/logout functionality, book borrowing/returning, user history tracking, and data persistence via CSV files.
 
-Welcome to the Library Management System (LMS), a comprehensive C++ program built using OOP concepts and designed to manage books, users, and borrowing activities in a library. This system is developed with simplicity and functionality in mind, making it easy for librarians, students, and faculty members to interact with the library's resources.
+⸻
 
-The program features a user-friendly menu-driven interface with username-password login system for secure access and with clear instructions for each action. Tables are used to display books, users, and borrowing history for better readability.
+Features
+	•	User Roles:
+	•	Student: Can issue up to 5 books for 30 days. Fine: ₹2/day after due date.
+	•	Faculty: Can issue unlimited books for 60 days. Fine: ₹5/day after due date.
+	•	Librarian: Can manage books and users (add/update/delete).
+	•	Book Management:
+	•	View all books
+	•	Check availability
+	•	Issue and return books
+	•	Account Management:
+	•	Login & signup
+	•	Auto-persistence to userdata.csv
+	•	Secure CSV write with file locking
+	•	Transaction Logs:
+	•	Tracks all borrow and return activity
+	•	Stored in history.csv
+	•	Persistent Storage:
+	•	Data saved and loaded from:
+	•	data/books.csv
+	•	data/userdata.csv
+	•	data/history.csv
 
-## General Features
+⸻
 
-- **User Roles & Authentication**
-  - Students (3-book limit, ₹10/day fines)
-  - Faculty (5-book limit, 60-day grace period)
-  - Librarians (full admin privileges)
+Directory Structure
 
-- **Book Management**
-  - Add/remove/edit books
-  - Track availability (Available/Borrowed/Reserved)
-  - Search and display in formatted tables
+.
+├── data/
+│   ├── books.csv
+│   ├── history.csv
+│   └── userdata.csv
+├── include/
+│   ├── account.h
+│   ├── book.h
+│   ├── faculty.h
+│   ├── librarian.h
+│   ├── library.h
+│   ├── logger.h
+│   ├── student.h
+│   ├── transaction.h
+│   └── utils.h
+├── src/
+│   ├── account.cpp
+│   ├── book.cpp
+│   ├── faculty.cpp
+│   ├── librarian.cpp
+│   ├── library.cpp
+│   ├── logger.cpp
+│   ├── main.cpp
+│   ├── student.cpp
+│   ├── transaction.cpp
+│   └── utils.cpp
+└── build/
+    └── main.out
 
-- **Borrowing System**
-  - Automatic due date calculation
-  - Overdue tracking with real-time fine updates
-  - Borrowing history per user
 
-- **Data Persistence**
-  - CSV storage for books/users
-  - File locking to prevent corruption
-  - Loads previous state on startup
+⸻
 
-- **Error handling**
-  - Rejects invalid ISBNs, passwords, and incorrect data types
-  - Defensive programming for all user inputs (e.g., non-integer values in numeric fields)
-  - Checks for file locks before write operations
+How to Compile and Run
+
+Make sure you have g++ installed and you’re in the root project directory.
+
+Compilation:
+
+g++ -std=c++17 -Iinclude src/*.cpp -o build/main.out
+
+Run the program:
+
+./build/main.out
 
 
-## How to Run the Program
+⸻
 
-### Prerequisites
-- A C++ compiler (e.g., GCC, Clang, or MSVC) supporting C++17. 
-- A terminal or command prompt.
+CSV Locking
 
-### Steps to Run
-First clone the repository -
-```
-git clone https://github.com/aritrar23/CS253_Lib_Management_System/
-cd CS253_Lib_Management_System
-```
-Now compile with g++ -
-```
-g++ -std=c++17 main.cpp -o library
-```
-Next run the executable -
-```
-library
-```
-### Note
-* DO NOT open the CSV files before or during the execution of the program, as it might lock the CSV files and not allow the program to write data in it. If the program can't write data on them, it will display an error message - saying CSV file is locked.
-* You can freely view the CSV files AFTER running the program, then close the CSV file, then run the program again, and so on. Please use Notepad to view the CSV files. If you use Excel, first turn off the default scientific notation to view the ISBN numbers properly.
-* Please run the terminal in FULL SCREEN MODE to view the tables properly. If the width of a row of a table exceeds a line, please REDUCE THE FONT of the terminal to view the table in its proper layout.
-* Format of books.csv -
-  
-  | Genre | Title | Author | Publisher | Year | ISBN | Status |
-  | ------| ----- | ------ | --------- | ---- | ---- | ------ |
-  
-* Format of users.csv -
+This system uses file locking (via fcntl or platform-specific techniques) to ensure that multiple users cannot write conflicting data into CSV files (like userdata.csv) simultaneously.
 
-  | User Id | Username | Password | Role (Student/Faculty/Librarian) | Name | Age | Gender | Borrowing history | Fine |
-  | ------- | -------- | -------- | -------------------------------- | ---- | --- | ------ | ----------------- | ---- |
-  
-* Borrowing history format - Each book's data is separated by ';'. For a single book, the format is -
+This prevents:
+	•	Duplicate usernames during signup
+	•	Concurrent file overwrites
 
-  | ISBN | Title | Borrowing Date | Return Date | Due Date | Status | Fine |
-  | ---- | ----- | -------------- | ----------- | -------- | ------ | ---- |
+⸻
+
+Data Format
+
+books.csv
+
+Genre,Title,Author,Publisher,Year,ISBN,status
+Fantasy,Harry Potter,J.K. Rowling,Bloomsbury,1997,ISBN001,Available
+
+userdata.csv
+
+username,type,password,num_borrowed,num_transactions
+ISBN,timestamp
+borrow_type,username,isbn,timestamp
+...
+
+history.csv
+
+transaction_type,username,isbn,YYYY-MM-DD HH:MM:SS
+
+
+⸻
+
+Author
+
+Developed by Sahil Pandey
+Undergraduate, Electrical Engineering
+IIT Kanpur
+
+⸻
+
+License
+
+This project is for academic use under CS253 - Software Development and Operations.

@@ -1,11 +1,21 @@
 Genre,Title,Author,Publisher,Year,ISBN,status
-Tech,Clean Code,Robert C. Martin,Prentice Hall,2008,ISBN010,Available
-Philosophy,The Republic,Plato,Penguin Classics,-380,ISBN009,Available
-Biography,Long Walk to Freedom,Nelson Mandela,Little, Brown,1994,ISBN008,Available
-Romance,Pride and Prejudice,Jane Austen,T. Egerton,1813,ISBN007,Available
-Horror,The Shining,Stephen King,Doubleday,1977,ISBN006,Available
-Non-Fiction,Sapiens,Yuval Harari,Harvill Secker,2011,ISBN005,Available
-Fantasy,Harry Potter,J.K. Rowling,Bloomsbury,1997,ISBN004,Available
-Mystery,Gone Girl,Gillian Flynn,Crown Publishing,2012,ISBN003,Available
-Sci-Fi,Dune,Frank Herbert,Chilton Books,1965,ISBN002,Available
-Fiction,The Alchemist,Paulo Coelho,HarperOne,1988,ISBN001,Available
+Crime,The Godfather,Mario Puzo,G. P. Putnam's Sons,1969,ISBN001,Available
+Fantasy,The Fellowship of the Ring,J.R.R. Tolkien,Allen & Unwin,1954,ISBN002,Available
+Fantasy,The Two Towers,J.R.R. Tolkien,Allen & Unwin,1954,ISBN003,Available
+Fantasy,The Return of the King,J.R.R. Tolkien,Allen & Unwin,1955,ISBN004,Available
+Self-Help,Ikigai,Héctor García,Francesc Miralles,2016,ISBN005,Available
+Fiction,The Great Gatsby,F. Scott Fitzgerald,Scribner,1925,ISBN006,Available
+Fiction,To Kill a Mockingbird,Harper Lee,J.B. Lippincott & Co.,1960,ISBN007,Available
+Fiction,1984,George Orwell,Secker & Warburg,1949,ISBN008,Available
+Non-Fiction,Sapiens,Yuval Noah Harari,Harper,2011,ISBN009,Available
+Self-Help,The Power of Now,Eckhart Tolle,New World Library,1997,ISBN010,Available
+Science,A Brief History of Time,Stephen Hawking,Bantam Books,1988,ISBN011,Available
+Science,Cosmos,Carl Sagan,Random House,1980,ISBN012,Available
+Fantasy,The Hobbit,J.R.R. Tolkien,Allen & Unwin,1937,ISBN013,Available
+Fantasy,Harry Potter and the Philosopher's Stone,J.K. Rowling,Bloomsbury,1997,ISBN014,Available
+Mystery,The Da Vinci Code,Dan Brown,Doubleday,2003,ISBN015,Available
+Biography,Steve Jobs,Walter Isaacson,Simon & Schuster,2011,ISBN016,Available
+Fiction,The Catcher in the Rye,J.D. Salinger,Little Brown,1951,ISBN017,Available
+Philosophy,The Republic,Plato,Penguin Classics,-380,ISBN018,Available
+Biography,Long Walk to Freedom,Nelson Mandela,Little Brown,1994,ISBN019,Available
+Romance,Pride and Prejudice,Jane Austen,T. Egerton,1813,ISBN020,Available
