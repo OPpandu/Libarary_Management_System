@@ -67,7 +67,6 @@ public:
 class Account {
     private:
         string userType;
-
         // borrowedBooks stores all information about the borrowed books of a particular user, which includes currently borrowed books and past borrowing history
         vector<tuple<string, string, string, string, string, string, int>> borrowedBooks;
         // Each tuple in the vector represents a borrowed book and contains the following elements:

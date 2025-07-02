@@ -1,0 +1,11 @@
+Genre,Title,Author,Publisher,Year,ISBN,status
+Tech,Clean Code,Robert C. Martin,Prentice Hall,2008,ISBN010,Available
+Philosophy,The Republic,Plato,Penguin Classics,-380,ISBN009,Available
+Biography,Long Walk to Freedom,Nelson Mandela,Little, Brown,1994,ISBN008,Available
+Romance,Pride and Prejudice,Jane Austen,T. Egerton,1813,ISBN007,Available
+Horror,The Shining,Stephen King,Doubleday,1977,ISBN006,Available
+Non-Fiction,Sapiens,Yuval Harari,Harvill Secker,2011,ISBN005,Available
+Fantasy,Harry Potter,J.K. Rowling,Bloomsbury,1997,ISBN004,Available
+Mystery,Gone Girl,Gillian Flynn,Crown Publishing,2012,ISBN003,Available
+Sci-Fi,Dune,Frank Herbert,Chilton Books,1965,ISBN002,Available
+Fiction,The Alchemist,Paulo Coelho,HarperOne,1988,ISBN001,Available
